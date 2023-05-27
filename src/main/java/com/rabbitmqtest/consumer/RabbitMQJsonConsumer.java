@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class RabbitMQJsonConsumer {
-
     private static final Logger LOGGER = LoggerFactory.getLogger(RabbitMQJsonConsumer.class);
 
     @RabbitListener(queues = {"${rabbitmq.queue.json.name}"})

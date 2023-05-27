@@ -26,7 +26,6 @@ public class RabbitMQConfig {
     private String routingJsonKey;
 
 
-
     @Bean
     public Queue queue() {
         return new Queue(queue);
